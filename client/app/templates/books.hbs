@@ -1,0 +1,10 @@
+<div class="book-list">
+{{#each model as |book|}}
+    {{#link-to 'book' book.id class="book"}}
+        {{book.title}}
+    {{/link-to}}
+{{/each}}
+</div>
+{{#link-to 'create-book' class='btn btn-addBook'}}
+Add Book
+{{/link-to}}
